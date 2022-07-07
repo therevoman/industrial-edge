@@ -42,7 +42,7 @@ validate-origin: ## verify the git origin is available
 	git ls-remote $(TARGET_REPO)
 
 deploy: validate-origin ## deploys the pattern
-	helm install $(NAME) common/install/ $(HELM_OPTS)
+	helm upgrade -i $(NAME) common/install/ $(HELM_OPTS)
 
 upgrade: validate-origin ## runs helm upgrade
 	helm upgrade $(NAME) common/install/ $(HELM_OPTS)
