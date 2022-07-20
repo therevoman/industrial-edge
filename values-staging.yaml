@@ -1,5 +1,5 @@
 clusterGroup:
-  name: factory-staging
+  name: staging
   isHubCluster: false
 
   namespaces:
@@ -22,7 +22,7 @@ clusterGroup:
     csv: seldon-operator.v1.12.0
 
   - name: amq-streams
-    namespace: manuela-stormstagingshift-messaging
+    namespace: manuela-staging-messaging
     channel: amq-streams-2.x
     csv: amqstreams.v2.0.1-0
 
