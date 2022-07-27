@@ -37,8 +37,8 @@ spec:
             path: /health
             port: 3000
           initialDelaySeconds: 15  
-          timeoutSeconds: 1
-          periodSeconds: 10
+          timeoutSeconds: 10
+          periodSeconds: 30
           successThreshold: 1
           failureThreshold: 3
         readinessProbe:
@@ -47,8 +47,8 @@ spec:
             port: 3000
             scheme: HTTP
           initialDelaySeconds: 15
-          timeoutSeconds: 1
-          periodSeconds: 10
+          timeoutSeconds: 10
+          periodSeconds: 30
           successThreshold: 1
           failureThreshold: 3  
       dnsPolicy: ClusterFirst
