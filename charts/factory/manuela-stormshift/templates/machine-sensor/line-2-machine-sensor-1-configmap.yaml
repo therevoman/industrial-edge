@@ -4,14 +4,14 @@ metadata:
   name: line-2-machine-sensor-1
   namespace: manuela-stormshift-machine-sensor
 data:
+  MQTT_HOSTNAME: "broker-amq-mqtt-all-0-svc-rte-manuela-stormshift-messaging.{{ .Values.global.localClusterDomain }}"
+  MQTT_PORT: "{{ .Values.machineSensor1.port }}"
   APP_NAME: "iot-sensor"
   DEVICE_ID: "pump-1"
   DEVICE_METRICS: "temperature,vibration,gps,light"
   MACHINE_ID: "floor-1-line-2-extruder-1"
   
-  MQTT_HOSTNAME: "broker-amq-mqtt-all-0-svc"
   MQTT_PASSWORD: "iotuser"
-  MQTT_PORT: "61616"
   MQTT_TLSSNI: "false"
   MQTT_USER: "iotuser"
 
@@ -44,8 +44,8 @@ data:
   SENSOR_VIBRATION_ENABLED: "true"
   SENSOR_VIBRATION_FREQUENC: "5"
   SENSOR_VIBRATION_MAXITERATION: "1"
-  SENSOR_VIBRATION_MAXRANGE: "17"
+  SENSOR_VIBRATION_MAXRANGE: "18"
   SENSOR_VIBRATION_MINITERATION: "0"
   SENSOR_VIBRATION_MINRANGE: "10"
-  SENSOR_VIBRATION_START: "12"
-  SENSOR_VIBRATION_PEAKINTETVAL: "200"
+  SENSOR_VIBRATION_START: "15"
+  SENSOR_VIBRATION_PEAKINTETVAL: "20"
