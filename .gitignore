@@ -2,3 +2,5 @@
 .*.swp
 .*.swo
 values-secret.yaml
+vault-secrets.txt
+common/golang-external-secrets/charts/external-secrets-0.4.4.tgz
